@@ -73,8 +73,9 @@
             size += 10;
             yesButton.style.fontSize = size + "px";
             noClickCount++;
-            if (noClickCount >= 10) {
+            if (noClickCount >= 4) {
                 noButton.style.display = "none";
+                alert("Ahw, guess I'll have to eat all the chocolates by myself! 🍫😭");
             }
         });
 
