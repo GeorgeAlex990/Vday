@@ -56,10 +56,15 @@
         let yesButton = document.getElementById("yes");
         let noButton = document.getElementById("no");
         let size = 20;
-        
+        let noClickCount = 0;
+
         noButton.addEventListener("click", function() {
             size += 10;
             yesButton.style.fontSize = size + "px";
+            noClickCount++;
+            if (noClickCount > 10) {
+                noButton.style.display = "none";
+            }
         });
 
         yesButton.addEventListener("click", function() {
