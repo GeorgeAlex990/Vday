@@ -5,76 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Be My Valentine?</title>
     <style>
-    body {
-        text-align: center;
-        font-family: Arial, sans-serif;
-        margin-top: 50px;
-        background-color: #ffe6e6;
-    }
-    h1 {
-        color: #ff4d6d;
-    }
-    img {
-        margin-top: 20px;
-        width: 300px;
-        height: auto;
-        border-radius: 20px;
-    }
-    .container {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 20px;
-    }
-    button {
-        font-size: 20px;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        border-radius: 10px;
-    }
-    #yes {
-        background-color: #ff4d6d;
-        color: white;
-        transition: all 0.3s ease;
-    }
-    #no {
-        background-color: #999;
-        color: white;
-    }
-</style>
-</head>
-<body>
-    <h1>Will you be my Valentine? 💖</h1>
-    <img src="https://georgealex990.github.io/Vday/V-day_photo.jpg" alt="Cute Valentine's Day Photo">
-    <div class="container">
-        <button id="yes">Yes</button>
-        <button id="no">No</button>
-    </div>
-    
-    <script>
-        let yesButton = document.getElementById("yes");
-        let noButton = document.getElementById("no");
-        let size = 20;
-        let noClickCount = 0;
-
-        noButton.addEventListener("click", function() {
-            size += 10;
-            yesButton.style.fontSize = size + "px";
-            noClickCount++;
-            if (noClickCount >= 10) {
-                noButton.style.display = "none";
-                alert("Ahw, guess I'll have to eat all the chocolates by myself!");
-            }
-        });
-
-        yesButton.addEventListener("click", function() {
-            alert("Yay! 💖 See you on Valentine's Day!");
-        });
-    </script>
-</body>
-</html>
-
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+            background-color: #ffe6e6;
         }
         h1 {
             color: #ff4d6d;
@@ -111,7 +46,7 @@
 </head>
 <body>
     <h1>Will you be my Valentine? 💖</h1>
-    <img src="https://georgealex990.github.io/Vday/V-day_photo.jpg" alt="Cute Valentine's Day Photo">
+    <img src="https://example.com/cute-valentine-photo.jpg" alt="Cute Valentine's Day Photo">
     <div class="container">
         <button id="yes">Yes</button>
         <button id="no">No</button>
@@ -127,9 +62,9 @@
             size += 10;
             yesButton.style.fontSize = size + "px";
             noClickCount++;
-            if (noClickCount > 10) {
+            if (noClickCount >= 10) {
                 noButton.style.display = "none";
-                alert("Ahw, guess I'll have to eat all the chocolates by myself!");
+                alert("Ahw, you won't be my valentine.");
             }
         });
 
@@ -139,3 +74,4 @@
     </script>
 </body>
 </html>
+```[_{{{CITATION{{{_1{](https://github.com/buribalazs/smooth-drag-order/tree/7b40d21d076c3e31765f61481f537beaf4c5ec9f/README.md)[_{{{CITATION{{{_2{](https://github.com/hilezkorra/arabictoroman/tree/692d80ad80f0a0fe36fa8f5dcf5326436712ef46/src%2Findex.php)
