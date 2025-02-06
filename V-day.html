@@ -46,13 +46,20 @@
 </head>
 <body>
     <h1>Will you be my Valentine? 💖</h1>
-    <img src="https://georgealex990.github.io/Vday/V-day_photo.jpg" alt="Cute Valentine's Day Photo">
+    <img src="https://georgealex990.github.io/VdayV-day_photo.jpg" alt="Cute Valentine's Day Photo">
     <div class="container">
         <button id="yes">Yes</button>
         <button id="no">No</button>
     </div>
+    <p id="senderMessage"></p>
     
     <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let senderName = urlParams.get('sender');
+        if (senderName) {
+            document.getElementById("senderMessage").innerText = `This message is from: ${decodeURIComponent(senderName)}`;
+        }
+
         let yesButton = document.getElementById("yes");
         let noButton = document.getElementById("no");
         let size = 20;
